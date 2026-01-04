@@ -3,7 +3,7 @@
 This repository contains code for "[Reliable LLM-Based Edge-Cloud-Expert Cascades for Telecom Knowledge Systems](https://arxiv.org/pdf/2512.20012)" -- Qiushuo Hou, Sangwoo Park, Matteo Zecchin, Yunlong Cai, Guanding Yu,Osvaldo Simeone, and Tommaso Melodia
 
 <div align="center">
-  <img src="./figures/figure_1.png" alt="system_model" width="300">
+  <img src="./figures/figure_1.png" alt="system_model" width="700">
 </div>
 Figure 1: Cascaded edge-cloud-human system: The query is processed by the edge model $M_{\text{edge}}$ if the edge model's epistemic uncertainty $U_{\text{edge}}(x)$ remains within the acceptable level $\epsilon$, while the confidence $C_{\text{edge}}(x)$ exceeds a threshold $\lambda$, i.e., $U_{\text{edge}}(x) < \epsilon$ and $C_{\text{edge}}(x) > \lambda$. Thus, the edge decision $M_{\text{edge}}(x)$ is produced only if the edge model is sufficiently knowledgeable and confident. When the edge epistemic uncertainty condition is not met, and thus the edge model does not have sufficient knowledge to address the query, the input $x$ is forwarded to the cloud model $M_{\text{cloud}}$. Similar knowledge and confidence tests are carried out for the cloud model based on epistemic uncertainty measure $U_{\text{cloud}}(x)$ and confidence measure $C_{\text{cloud}}(x)$. If the cloud model passes the test, i.e.,  $U_{\text{cloud}}(x) < \epsilon$ and $C_{\text{cloud}}(x) > \lambda$, the cloud decision $M_{\text{cloud}}(x)$ is returned, otherwise, the input $x$ is deferred to a human expert.
 
